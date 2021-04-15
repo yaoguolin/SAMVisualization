@@ -1,3 +1,5 @@
+% Run ReportCard_threelayer11242019_GY_gradientcolor.m first
+
 load([dir 'EPI_Regions.mat']);
 
 rgname = fieldnames(RegionID);
@@ -36,7 +38,7 @@ for r = 1:1:n_rg
     dimen_total_share_rg(r, 1, :) = red_share_rg(r,:);
 end
 
-RegionName0 = {"Asia", "Caribbean", "E. Europe & Eurasia", "Europe & N. America", "Latin America", "Mid East & N. Afr…", "Pacific", "Sub-Saharan Africa"};
+RegionName0 = {"Asia", "Caribbean", "E. Europe & Eurasia", "Europe & N. America", "Latin America", "Mid East & N. Afrâ€¦", "Pacific", "Sub-Saharan Africa"};
 
 figure('units','normalized','outerposition',[0 0 1 1]);
 [ha, pos] = tight_subplot(2,2,[0.1 0.05],[.15 .05],[.05 .01]); 
